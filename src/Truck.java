@@ -1,13 +1,13 @@
-public class Truck extends Transport implements CheckEngine, CheckTrailer {
+public class Truck extends Transport implements Serviceable {
 
     public Truck(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
 
     @Override
-    public void check() {
+    public void service() {
         this.updateTyre();
-        this.checkEngine();
-        this.checkTrailer();
+        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем прицеп");
     }
 }

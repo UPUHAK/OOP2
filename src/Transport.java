@@ -1,4 +1,4 @@
-public abstract class Transport {
+public abstract class Transport implements Serviceable {
 
     private final String modelName;
     private final int wheelsCount;
@@ -22,7 +22,5 @@ public abstract class Transport {
             System.out.println("Меняем покрышку");
         }
     }
-
-    public abstract void check();
 
 }

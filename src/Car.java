@@ -1,12 +1,12 @@
-public class Car extends Transport implements CheckEngine {
+public class Car extends Transport implements Serviceable {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
 
     @Override
-    public void check() {
+    public void service() {
         this.updateTyre();
-        this.checkEngine();
+        System.out.println("Проверяем двигатель");
     }
 }

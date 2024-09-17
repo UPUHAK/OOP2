@@ -1,11 +1,11 @@
-public class Bicycle extends Transport {
+public class Bicycle extends Transport implements Serviceable {
 
     public Bicycle(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
     }
 
     @Override
-    public void check() {
+    public void service() {
         this.updateTyre();
     }
 }

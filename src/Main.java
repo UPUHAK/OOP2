@@ -13,10 +13,11 @@ public class Main {
 
         vehicleFleet[4] = null;
 
+        TransportService service = new TransportService();
 
         for (Transport transport : vehicleFleet) {
             if (transport != null)
-                transport.check();
+                service.serviceTransport(transport);
         }
 
     }
