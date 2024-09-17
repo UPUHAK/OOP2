@@ -16,7 +16,7 @@ public class Main {
 
         for (Transport transport : vehicleFleet) {
             if (transport != null)
-                transport.check(transport);
+                transport.check();
         }
 
     }
